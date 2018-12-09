@@ -1,0 +1,70 @@
+div.room-search {
+    padding: 15px;
+    margin-left: 10%;
+}
+
+.text-center h2 {
+    font-size: 43px;
+    font-variant: all-petite-caps;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.form-group label, input, textarea, select {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.card-default {
+    color: #333;
+    background: linear-gradient(#fff, #ebecea) repeat scroll 0 0 transparent;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+@media all and (min-width: 0px) and (max-width: 600px) {
+    div.room-search {
+        padding: 15px;
+        margin: 0;
+    }
+
+    div.room-search div.row {
+        width: 140%;!important;
+        margin-right: 0px;!important;
+    }
+
+    div.room-search .container{
+        margin: 0;
+    }
+
+    div.room-search div.row .col-lg-12{
+        padding-left: 0px;!important;
+    }
+
+    #searchRoomForm{
+        width: 100%;
+    }
+
+    #searchRoomForm .form-group , #searchroom{
+        margin-bottom: 1rem;
+        width: 70%;
+    }
+
+    .text-center h2 {
+        font-size: 43px;
+        font-variant: all-petite-caps;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+
+    .form-group label, input, textarea, select {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    .card-default {
+        color: #333;
+        background: linear-gradient(#fff, #ebecea) repeat scroll 0 0 transparent;
+        font-weight: 600;
+        border-radius: 6px;
+        width: 100%;
+    }
+}

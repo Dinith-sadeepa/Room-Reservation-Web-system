@@ -1,0 +1,185 @@
+div.panel {
+    width: 40%;
+    padding: 20px 20px 2px 20px;
+    background: #efefef;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F4F4F4', GradientType=0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    margin: 0 0 20px 0;
+    position: relative;
+    left: 30%;
+}
+
+.credit-card-box .display-table {
+
+    display: table;
+
+}
+
+.credit-card-box .display-tr {
+
+    display: table-row;
+
+}
+
+.row .row {
+
+    min-width: 0;
+
+}
+
+.row {
+
+    max-width: 1040px;
+    min-width: 940px;
+
+}
+
+.row, .clearfix {
+
+    zoom: 1;
+
+}
+
+.credit-card-box .display-td {
+
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+
+}
+
+.credit-card-box .panel-title {
+
+    display: inline;
+    font-weight: bold;
+
+}
+
+.credit-card-box .display-td {
+
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+
+}
+
+.row {
+
+    width: 100%;
+    max-width: 1280px;
+    min-width: 727px;
+    margin: 0 auto;
+
+}
+
+.mm {
+    display: inline-block;
+}
+
+@media all and (min-width: 0px) and (max-width: 600px) {
+    /*.credit-card-box {*/
+    /*width: 90%;*/
+    /*!important;*/
+    /*left: 6%;*/
+    /*!important;*/
+    /*margin: 0;*/
+    /*!important;*/
+    /*padding: 0;*/
+    /*!important;*/
+    /*}*/
+    .card-detail {
+        padding-right: 0;
+    }
+
+    div.panel {
+        width: 89%;
+        padding: 20px 20px 2px 20px;
+        background: #efefef;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F4F4F4', GradientType=0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        margin: 0 0 20px 0;
+        position: relative;
+        left: 6%;
+    }
+
+
+    .credit-card-box .selectContainer{
+        padding-right: 0;
+    }
+
+    .credit-card-box .display-table {
+
+        display: table;
+
+    }
+
+    #cardHolderNameForm{
+        padding-left: 15px;
+    }
+
+    .credit-card-box .display-tr {
+
+        display: table-row;
+
+    }
+
+    .row .row {
+
+        min-width: 0;
+
+    }
+
+    .row {
+
+        max-width: 1040px;
+        min-width: 940px;
+
+    }
+
+    .row, .clearfix {
+
+        zoom: 1;
+
+    }
+
+    .credit-card-box .display-td img{
+        width: 60%;
+    }
+
+    .credit-card-box .display-td {
+
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+
+    }
+
+    .credit-card-box .panel-title {
+
+        display: inline;
+        font-weight: bold;
+
+    }
+
+    .credit-card-box .display-td {
+
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+
+    }
+
+    .row {
+
+        width: 100%;
+        max-width: 1280px;
+        min-width: 727px;
+        margin: 0 auto;
+
+    }
+
+    .mm {
+        display: inline-block;
+    }
+
+}

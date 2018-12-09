@@ -1,0 +1,109 @@
+div.bg-slider-img{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background: url("../img/slider/3.jpeg") no-repeat;
+    overflow: hidden;
+    padding: 0;
+}
+
+.banner-txt {
+    width: 420px;
+    padding: 40px;
+    background: #813f49;
+    text-align: center;
+    color: #B7975B;
+    position: absolute;
+    left: calc(50vw - 200px);
+    bottom: calc(70% - 90px);
+    opacity: 0.95;
+}
+.banner-txt h4 span {
+
+    background: #813f49;
+    padding: 0px 10px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+
+}
+
+.banner-txt h2 {
+
+    padding: 25px 0px;
+    border-top: 1px solid #B99F77;
+    border-bottom: 1px solid #B99F77;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+
+img.mouse-scroll{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+}
+
+@media all and (min-width: 0px) and (max-width: 600px) {
+    div.bg-slider-img{
+        position: absolute;
+        width: 100%;
+        height: 90vh;
+        background: url("../img/slider/2.jpeg") no-repeat;
+        overflow: hidden;
+        padding: 0;
+        background-size: cover;
+    }
+    div.bg-slider-img img{
+
+    }
+
+    .banner-txt {
+        width: 420px;
+        padding: 40px;
+        background: #813f49;
+        text-align: center;
+        color: #B7975B;
+        position: absolute;
+        left: calc(50vw - 200px);
+        bottom: calc(70% - 90px);
+        opacity: 0.95;
+    }
+    .banner-txt h4 span {
+
+        background: #813f49;
+        padding: 0px 10px;
+        font-weight: 500;
+        font-family: "Raleway", sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+
+    }
+
+    .banner-txt h2 {
+
+        padding: 25px 0px;
+        border-top: 1px solid #B99F77;
+        border-bottom: 1px solid #B99F77;
+        float: left;
+        width: 100%;
+        margin: 0px;
+        font-family: 'Cinzel', serif;
+        font-weight: 400;
+        font-size: 30px;
+
+    }
+
+    img.mouse-scroll{
+        position: absolute;
+        left: 50%;
+        top: 60%;
+    }
+
+}

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="dist/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/page.css">
+    <link rel="stylesheet" href="dist/css/header.css">
+    <link rel="stylesheet" href="dist/css/footer.css">
+    <link rel="stylesheet" href="dist/css/slider.css">
+    <link rel="stylesheet" href="dist/css/bg-img.css">
+    <link rel="stylesheet" href="dist/css/reservation-form.css">
+    <link rel="stylesheet" href="dist/css/check-room.css">
+    <link rel="stylesheet" href="dist/css/serivice-table.css">
+    <link rel="stylesheet" href="dist/css/serivice-table.css">
+    <link rel="stylesheet" href="dist/css/guest-informations.css">
+    <link rel="stylesheet" href="dist/css/payment-form.css">
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!--date picker-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet"
+          type="text/css"/>
+
+</head>
+<body>
+
+<!--header-->
+<nav class="main-navigation" id="nav_area">
+    <div class="row" style="height: 100px; width: 100%;">
+        <!--<div class="col-md-1"></div>-->
+
+        <div class="navbar-header animated fadeInUp">
+            <a class="navbar-brand" href="#">
+                <img src="dist/img/Hotel-logo.png" alt="">
+            </a>
+        </div>
+        <div class="col-md-4"></div>
+        <ul class="nav-list">
+
+            <!--<li class="nav-list-item">-->
+                <!--<a href="#" class="nav-link">Gallery</a>-->
+            <!--</li>-->
+            <li class="nav-list-item">
+                <a href="#reservation_area" class="nav-link">
+                    <button class="btn btn-outline-success nav-link">Reserve Now</button>
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#gallery_area" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#contact_area" class="nav-link">Contact</a>
+            </li>
+        </ul>
+
+        <div class="col-md-1"></div>
+    </div>
+</nav>
+
+<!--bg-img-->
+<div class="bg-slider-img animated fadeInUp" id="bg-img" style="position: relative">
+    <div class="banner-txt">
+        <h4><span>THE WIJAYAGIRI HOTEL</span></h4>
+        <h2>HOSPITALITY IN STYLE</h2>
+    </div>
+    <img src="dist/img/slider/scroll-gif-13.gif" alt="" width="100" class="mouse-scroll">
+</div>
+
+
+<!--reservation-form-->
+<div class="row room-search" id="reservation_area">
+    <div class="jumbotron jumbotron-fluid"></div>
+    <div class="container">
+        <div id="accordion">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h2>Reserve Your Room Now!</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div id="collapse1" class="collapse show">
+                    <div class="card-body">
+                        <form id="searchRoomForm">
+                            <div class="row">
+                                <div class="col-md-2 col-lg-2 col-sm-8">
+                                    <div class="form-group">
+                                        <label class="control-label">Check IN Date</label>
+                                        <div class="input-group date">
+                                            <input name="checkInDate" id="checkInDate" class="form-control" type="text"/>
+                                            <span class="input-group-append">
+                                    <button class="btn btn-outline-primary" type="button">
+                                        <i class="fa fa-calendar"></i>
+                                    </button></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-8">
+                                    <div class="form-group">
+                                        <label class="control-label">Check OUT Date</label>
+                                        <div class="input-group date">
+                                            <input name="checkOutDate" id="checkOutDateText" class="form-control" type="text"/>
+                                            <span class="input-group-append">
+                                    <button class="btn btn-outline-primary" type="button">
+                                        <i class="fa fa-calendar"></i>
+                                    </button></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-sm-8">
+                                    <div class="form-group">
+                                        <label class="control-label">No Of Adults</label>
+                                        <input name="noOfAdultsText" id="noOfAdultsText" type="number" class="form-control"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-lg-2 col-sm-8">
+                                    <div class="form-group">
+                                        <label class="control-label">No Of Rooms</label>
+                                        <select name="noOfRoomsComboBox" id="noOfRoomsComboBox"
+                                                class="form-control">
+                                            <option value="1" selected="selected">1 Room</option>
+                                            <option value="2">2 Rooms</option>
+                                            <option value="3">3 Rooms</option>
+                                            <option value="4">4 Rooms</option>
+                                            <option value="5">5 Rooms</option>
+                                            <option value="6">6 Rooms</option>
+                                            <option value="7">7 Rooms</option>
+                                            <option value="8">8 Rooms</option>
+                                            <option value="9">9 Rooms</option>
+                                            <option value="10">10 Rooms</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-sm-8">
+                                    <div class="form-group">
+                                        <label class="control-label">Room Type</label>
+                                        <select name="roomTypeComboBox" class="form-control">
+                                            <option value="ac" selected="selected">AC</option>
+                                            <option value="non ac">Non AC</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-sm-8">
+                                    <div class="form-group">
+                                        <label class="control-label">Room Category</label>
+                                        <select name="roomCategoryComboBox" class="form-control">
+                                            <option value="king" selected="selected">King</option>
+                                            <option value="queen">Queen</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 col-sm-8"></div>
+                                <button type="button" class="btn btn-success col-md-4" id="searchroom">Check
+                                    availability
+                                </button>
+                                <div class="col-md-4"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="check-rooms">
+    <ul id="searchRoomCard">
+        <!--<li>-->
+        <!--<div class="card" style="width: 18rem;">-->
+        <!--<img class="card-img-top" src="dist/img/slider/3.jpeg" alt="Card image cap">-->
+        <!--<div class="card-body">-->
+        <!--<div class="row card-title">-->
+        <!--<h3>Room Category : King</h3>-->
+        <!--</div>-->
+        <!--<br>-->
+        <!--<h3>Room Type : AC</h3>-->
+        <!--<h3 class="card-text">Room Floor : <span id="searchRoomFloor">3</span></h3>-->
+        <!--<h3 class="card-title">Room Price : <span id="searchRoomPrice">1600/=</span></h3>-->
+        <!--<button class="btn btn-outline-success" style="margin-left: 60px;" id="reserveButon">Reserve Room-->
+        <!--</button>-->
+        <!--</div>-->
+
+
+        <!--</div>-->
+        <!--&lt;!&ndash;service table&ndash;&gt;-->
+
+        <!--<div class="container service-panel">-->
+        <!--<div class="row col-md-6 col-md-offset-2 custyle">-->
+        <!--<table class="table table-striped custab">-->
+        <!--<thead>-->
+        <!--<tr>-->
+        <!--<th>ID</th>-->
+        <!--<th>Description</th>-->
+        <!--<th>Price</th>-->
+        <!--<th class="text-center">Select</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody id="serviceTable"></tbody>-->
+        <!--</table>-->
+        <!--<button class="btn btn-outline-success" style="margin-left: 60px;" id="reserveDoneButton">Done-->
+        <!--</button>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</li>-->
+    </ul>
+</div>
+<form id="reservationDetails">
+    <!--guest details-->
+    <div class="container">
+        <div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h2>Guest Information</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse show card-default jumbotron jumbotron-fluid guest-fo-info">
+                <div class="card-body guest-info">
+                    <div class="row">
+
+                        <div class="col-md-2 col-lg-3">
+                            <div class="form-group">
+                                <label class="control-label">NIC *</label>
+                                <input type="text" name="guestNICText" id="guestNICText" class="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-lg-3">
+                            <div class="form-group">
+                                <label class="control-label">Guest Name *</label>
+                                    <input type="text" name="guestNameText" id="guestNameText" class="form-control" disabled/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">Address *</label>
+                                <input type="text" name="guestAddressText" id="guestAddressText" class="form-control" disabled/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2 col-lg-3">
+                            <div class="form-group">
+                                <label class="control-label">E-Mail *</label>
+                                <input type="text" name="guestEMailText" id="guestEMailText" class="form-control" disabled/>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-3">
+                            <div class="form-group">
+                                <label class="control-label">Phone No *</label>
+                                <input type="number" name="guestPhoneNoText" id="guestPhoneNoText" class="form-control" disabled/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--payment-->
+    <div class="panel panel-default credit-card-box">
+        <div class="panel-heading display-table">
+            <div class="row display-tr">
+                <h2 class="text-center"
+                    style="width: 130%;font-size: 40px;font-variant: all-petite-caps;font-family: 'Montserrat Alternates', sans-serif;">
+                    Payment Details</h2>
+                <div class="display-td">
+                    <img class="img-responsive pull-right" src="dist/img/payment/cardType.png">
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-5 col-sm-4 card-detail">
+                    <div class="form-group">
+                        <label class="col-md-12 control-label">Card Type</label>
+                        <div class="col-md-12 selectContainer">
+                            <select class="form-control" name="cardType" style="width:75%">
+                                <option value="-1">Select a type</option>
+
+                                <option value="American Express">American Express</option>
+
+                                <option value="Master">Master</option>
+
+                                <option value="Visa">Visa</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-12 control-label">Card Number</label>
+                    <div class="col-md-12 col-sm-11">
+                        <input type="text" class="form-control" id="card_number" name="cardNO" placeholder="Card Number"
+                               style="width: 100%;"
+                               aria-required="true">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group col-md-12">
+                        <label class="col-md-12" style="padding: 0">EXPIRATION DATE</label>
+                        <input type="text" class="form-control mm col-md-3 col-sm-2" name="cardValidity_month"
+                               id="cardValidity_month" placeholder="MM" required=""
+                               aria-required="true">
+                        <label for="cardValidity_year">/</label>
+                        <input type="text" class="form-control col-md-4 col-sm-4" name="cardValidity_year" id="cardValidity_year"
+                               style="display: inline;: "
+                               placeholder="YY" required="" aria-required="true">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-7">
+                    <div class="form-group" id="cardHolderNameForm">
+                        <label>Card Holder Name</label>
+                        <input type="text" class="form-control" name="cardHolderName" id="cardHolderName"
+                               placeholder="Card Holder Name" autocomplete="cc-csc" required=""
+                               style="width:85%" aria-required="true">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5 col-sm-3"></div>
+        <div class="col-md-6 col-sm-3">
+            <button class="btn btn-outline-success" type="button" id="confirmBookingButton">Confirm and Book</button>
+        </div>
+    </div>
+</form>
+<!--Gallery-->
+<div class="card-deck" style="margin: 15px" id="gallery_area">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="card">
+            <img class="card-img-top" src="dist/img/interest/166583642.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">“Everything staff are lovely and the food is so yummy and the good thing
+                    there is
+                    a mall attached to it”</h5>
+            </div>
+
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="dist/img/interest/166582968.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">“The pool is incredible with amazing views. We ate in the Chinese
+                    restaurant and
+                    the food was delicious, the staff were also very courteous and helpful.</h5>
+            </div>
+        </div>
+        <div class="card last-card">
+            <img class="card-img-top" src="dist/img/interest/166575141.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">“excellent location, near the main shopping streets, the sea view is
+                    excellent.”</h5>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="card">
+            <img class="card-img-top" src="dist/img/interest/125005018.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">“everything was great and also they accept late check out without payment
+                    which
+                    was great”</h5>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="dist/img/interest/166553100.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">“Cleanliness, Polite Staff, Reasonable price. Flexibility”</h5>
+            </div>
+        </div>
+        <div class="card last-card">
+            <img class="card-img-top" src="dist/img/interest/166571572.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">“The hotel looks nice and new. The infinity pool on the roof is awesome.
+                    ”</h5>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="card">
+            <img class="card-img-top" src="dist/img/interest/166879584.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">“With a lot of varieties and there is a very small nice mall on the 1st
+                    floor.
+                    The room was very spacious and quiet.”</h5>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="dist/img/interest/166575131.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">“The rooms were clean and comfortable.”</h5>
+            </div>
+        </div>
+        <div class="card last-card">
+            <img class="card-img-top" src="dist/img/interest/166572438.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">“The hotel can conveniently provide information at the reception to help
+                    guests
+                    to get around the area.”</h5>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+
+<!--contact us-->
+<div class="container" id="contact_area">
+    <!--<h2 class="text-center">Contact Us</h2>-->
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 pb-5">
+
+
+            <!--Form with header-->
+
+            <form>
+                <div class="card border-primary rounded-0">
+                    <div class="card-header p-0">
+                        <div class="bg-success text-white text-center py-2">
+                            <h3><i class="fa fa-envelope"></i> Just Mail</h3>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+
+                        <!--Body-->
+                        <div class="form-group">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-user text-success"></i></div>
+                                </div>
+                                <input type="text" class="form-control" name="nombre" placeholder="User Name"
+                                       required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-envelope text-success"></i></div>
+                                </div>
+                                <input type="email" class="form-control" id="nombre" name="email"
+                                       placeholder="E-Mail Address" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-comment text-success"></i></div>
+                                </div>
+                                <textarea class="form-control" placeholder="Message" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <input type="submit" value="Send" class="btn btn-success btn-block rounded-0 py-2">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            <!--Form with header-->
+
+
+        </div>
+    </div>
+</div>
+
+<div class="top-button" style="position: fixed;
+    bottom: 0;
+    z-index: 50;
+    right: 3%;">
+    <a href="#nav_area">
+        <i class="fas fa-angle-double-up" style="font-size: 50px;color: #1c7430"></i>
+    </a>
+</div>
+
+
+
+<!--footer-->
+<footer class="footer">
+    <div class="container bottom_border">
+        <div class="container">
+            <ul class="footer_bottom">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <p class="text-center">Copyright @2018 | Designed by Dinith Sadeepa</p>
+
+            <ul class="social_footer_ul">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<script src="dist/js/jquery-3.3.1.min.js"></script>
+<script src="dist/js/bootstrap/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script src="dist/controller/ReservationController.js"></script>
+<script src="dist/js/bg-img-move.js"></script>
+<script src="dist/js/date-picker.js"></script>
+<script src="dist/js/check-availability.js"></script>
+<script src="dist/js/reserve-button.js"></script>
+</body>
+</html>
